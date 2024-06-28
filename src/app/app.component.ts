@@ -1,11 +1,12 @@
 import { CurrencyPipe, DatePipe, DecimalPipe, JsonPipe, TitleCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ConvertPipe } from './convert.pipe';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TitleCasePipe, DatePipe, CurrencyPipe, DecimalPipe, JsonPipe],
+  imports: [RouterOutlet, TitleCasePipe, DatePipe, CurrencyPipe, DecimalPipe, JsonPipe, ConvertPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -14,6 +15,7 @@ export class AppComponent {
   paymentDate: string = '';
   amount: number = 0;
   height: number = 0;
+  miles: number = 0;
 
   car = {
     make: 'Tesla',
@@ -38,5 +40,9 @@ export class AppComponent {
 
   onHeightChange(event: Event) {
     this.height = Number((event.target as HTMLInputElement).value);
+  }
+
+  onMilesChange(event: Event) {
+    this.miles = Number((event.target as HTMLInputElement).value);
   }
 }
