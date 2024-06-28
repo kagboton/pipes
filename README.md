@@ -1,5 +1,13 @@
 # Pipes
 
+
+Pipes application deployed with now.io and available at : https://pipes-eta-woad.vercel.app Built from Stephen Grider Angular Udemy course (section 6) : https://www.udemy.com/course/the-modern-angular-bootcamp/
+
+What we've done here :
+- praticed pipes inside templates
+- creted and used custom pipes
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
 ## Development server
