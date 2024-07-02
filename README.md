@@ -5,7 +5,7 @@ Pipes application deployed with now.io and available at : https://pipes-eta-woad
 
 What we've done here :
 - praticed pipes inside templates
-- creted and used custom pipes
+- created and used custom pipes
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
